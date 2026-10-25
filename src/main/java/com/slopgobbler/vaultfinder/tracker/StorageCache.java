@@ -281,26 +281,28 @@ public class StorageCache {
 
     /**
      * Searches nearby containers within a maximum Euclidean radius of an origin, sorted by proximity.
+     * If maxRadius is <= 0, returns all matching containers regardless of distance.
      *
      * @param dimension Dimension identifier
      * @param origin    Player or center coordinates
-     * @param maxRadius Maximum search radius in blocks
+     * @param maxRadius Maximum search radius in blocks (or <= 0 for unlimited)
      * @param query     Structured query
      * @return Matching results sorted by ascending distance
      */
     public List<SearchResult> searchNearby(String dimension, BlockPos origin, double maxRadius, ItemQuery query) {
-        if (dimension == null || origin == null || maxRadius <= 0.0D) {
+        if (dimension == null || origin == null) {
             return Collections.emptyList();
         }
         Map<BlockPos, ContainerSnapshot> map = dimensionMap.get(dimension);
         if (map == null || map.isEmpty()) return Collections.emptyList();
 
-        double maxRadiusSq = maxRadius * maxRadius;
+        boolean unlimited = maxRadius <= 0.0D;
+        double maxRadiusSq = unlimited ? Double.MAX_VALUE : maxRadius * maxRadius;
         List<SearchResult> results = new ArrayList<>();
 
         for (ContainerSnapshot snapshot : map.values()) {
             double distSq = snapshot.distanceSq(origin);
-            if (distSq <= maxRadiusSq) {
+            if (unlimited || distSq <= maxRadiusSq) {
                 List<ItemEntry> matched = snapshot.findMatchingItems(query);
                 if (!matched.isEmpty()) {
                     int totalCount = 0;

@@ -1,2 +1,0 @@
-"D:/GEMINI AGY/workspaces/vault-finder-pro/src/test/java/com/slopgobbler/vaultfinder/query/QueryParserTest.java"
-"D:/GEMINI AGY/workspaces/vault-finder-pro/src/test/java/com/slopgobbler/vaultfinder/tracker/StorageCacheTest.java"

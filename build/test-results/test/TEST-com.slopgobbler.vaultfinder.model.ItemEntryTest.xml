@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.slopgobbler.vaultfinder.model.ItemEntryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T23:08:03.759Z" hostname="DESKTOP-7C7HBBS" time="0.003">
-  <properties/>
-  <testcase name="testCustomNameAndEnchantments()" classname="com.slopgobbler.vaultfinder.model.ItemEntryTest" time="0.001"/>
-  <testcase name="testJsonRoundtrip()" classname="com.slopgobbler.vaultfinder.model.ItemEntryTest" time="0.001"/>
-  <testcase name="testBasicProperties()" classname="com.slopgobbler.vaultfinder.model.ItemEntryTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

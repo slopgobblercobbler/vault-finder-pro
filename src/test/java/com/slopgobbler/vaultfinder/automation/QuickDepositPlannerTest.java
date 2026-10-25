@@ -140,7 +140,7 @@ public class QuickDepositPlannerTest {
         );
 
         List<QuickDepositPlanner.MoveAction> actions = QuickDepositPlanner.planDeposit(playerInv, chestInv, 27, true);
-        assertEquals(3, actions.size());
+        assertEquals(4, actions.size());
 
         // First stack: 14 into slot 0 (now 64), 50 into slot 1
         assertEquals(9, actions.get(0).getSourceSlot());
@@ -151,10 +151,14 @@ public class QuickDepositPlannerTest {
         assertEquals(1, actions.get(1).getTargetSlot());
         assertEquals(50, actions.get(1).getCount());
 
-        // Second stack: all 64 into slot 2
+        // Second stack: tops up slot 1 with 14 (now 64), remaining 50 into slot 2
         assertEquals(10, actions.get(2).getSourceSlot());
-        assertEquals(2, actions.get(2).getTargetSlot());
-        assertEquals(64, actions.get(2).getCount());
+        assertEquals(1, actions.get(2).getTargetSlot());
+        assertEquals(14, actions.get(2).getCount());
+
+        assertEquals(10, actions.get(3).getSourceSlot());
+        assertEquals(2, actions.get(3).getTargetSlot());
+        assertEquals(50, actions.get(3).getCount());
     }
 
     @Test

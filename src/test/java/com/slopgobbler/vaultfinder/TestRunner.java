@@ -31,6 +31,10 @@ public class TestRunner {
 
         if (summary.getTotalFailureCount() > 0) {
             System.err.println("\n[ERROR] Tests failed: " + summary.getTotalFailureCount() + " failures!");
+            for (TestExecutionSummary.Failure failure : summary.getFailures()) {
+                System.err.println("FAILED: " + failure.getTestIdentifier().getDisplayName());
+                failure.getException().printStackTrace(System.err);
+            }
             System.exit(1);
         } else {
             System.out.println("\n[SUCCESS] All " + summary.getTestsSucceededCount() + " tests passed!");

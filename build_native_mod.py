@@ -140,6 +140,8 @@ def main():
     print(f"[*] Found {len(main_sources)} main Java source files.")
 
     main_classes_dir = os.path.join(root, "build", "classes", "java", "main")
+    if os.path.isdir(main_classes_dir):
+        shutil.rmtree(main_classes_dir)
     os.makedirs(main_classes_dir, exist_ok=True)
 
     # Write cp argument file
@@ -181,6 +183,8 @@ def main():
                     test_sources.append(os.path.join(r, f).replace("\\", "/"))
 
     test_classes_dir = os.path.join(root, "build", "classes", "java", "test")
+    if os.path.isdir(test_classes_dir):
+        shutil.rmtree(test_classes_dir)
     os.makedirs(test_classes_dir, exist_ok=True)
 
     if test_sources:
