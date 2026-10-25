@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Spatial Radius Query Tests" tests="3" skipped="0" failures="1" errors="0" timestamp="2026-10-25T23:08:03.849Z" hostname="DESKTOP-7C7HBBS" time="0.003">
+  <properties/>
+  <testcase name="Radius search finds containers within distance and orders by proximity" classname="com.slopgobbler.vaultfinder.tracker.StorageCacheTest$SpatialRadiusTests" time="0.0"/>
+  <testcase name="Search with maxRadius &lt;= 0 returns all containers regardless of distance" classname="com.slopgobbler.vaultfinder.tracker.StorageCacheTest$SpatialRadiusTests" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at app//com.slopgobbler.vaultfinder.tracker.StorageCacheTest$SpatialRadiusTests.testUnlimitedRadius(StorageCacheTest.java:308)
+	at java.base@21.0.12.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.12.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="3D Euclidean distance calculation includes Y coordinate" classname="com.slopgobbler.vaultfinder.tracker.StorageCacheTest$SpatialRadiusTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

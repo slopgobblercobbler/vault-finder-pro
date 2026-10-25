@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Edge Cases &amp; Robustness Tests" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-25T23:08:03.764Z" hostname="DESKTOP-7C7HBBS" time="0.011">
+  <properties/>
+  <testcase name="Special characters do not throw exceptions" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$EdgeCaseTests" time="0.001"/>
+  <testcase name="Non-matching queries return false" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$EdgeCaseTests" time="0.0"/>
+  <testcase name="Quoted phrases preserve spaces and require whole phrase" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$EdgeCaseTests" time="0.0"/>
+  <testcase name="Composite multi-criteria query" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$EdgeCaseTests" time="0.003"/>
+  <testcase name="Empty string matches all items" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$EdgeCaseTests" time="0.001"/>
+  <testcase name="Null ItemEntry passed to matches returns false" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$EdgeCaseTests" time="0.001"/>
+  <testcase name="Whitespace-only queries are treated as empty" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$EdgeCaseTests" time="0.0"/>
+  <testcase name="Null input string is treated as empty query" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$EdgeCaseTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

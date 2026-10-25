@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Simple Keyword Searches" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-25T23:08:03.807Z" hostname="DESKTOP-7C7HBBS" time="0.003">
+  <properties/>
+  <testcase name="Search multi-word phrase matching item ID or name" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$SimpleKeywordTests" time="0.0"/>
+  <testcase name="Search matches formatted readable name" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$SimpleKeywordTests" time="0.0"/>
+  <testcase name="Search is case insensitive" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$SimpleKeywordTests" time="0.0"/>
+  <testcase name="Search matching custom display name" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$SimpleKeywordTests" time="0.0"/>
+  <testcase name="Search single keyword matching item ID" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$SimpleKeywordTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

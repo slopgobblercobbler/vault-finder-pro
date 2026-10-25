@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JSON Serialization &amp; Deserialization Round-Trip" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T23:08:03.817Z" hostname="DESKTOP-7C7HBBS" time="0.016">
+  <properties/>
+  <testcase name="Atomic file save and load round-trip" classname="com.slopgobbler.vaultfinder.tracker.StorageCacheTest$JsonRoundTripTests" time="0.013"/>
+  <testcase name="Full round-trip JSON serialization and deserialization" classname="com.slopgobbler.vaultfinder.tracker.StorageCacheTest$JsonRoundTripTests" time="0.001"/>
+  <testcase name="Deserializing null or blank JSON string produces empty cache safely" classname="com.slopgobbler.vaultfinder.tracker.StorageCacheTest$JsonRoundTripTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

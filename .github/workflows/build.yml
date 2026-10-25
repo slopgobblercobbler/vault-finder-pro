@@ -1,0 +1,35 @@
+name: Build and Verify
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Run Build and Tests
+      run: |
+        python build_native_mod.py
+
+    - name: Upload Mod Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: vaultfinder-pro-jar
+        path: build/libs/*.jar

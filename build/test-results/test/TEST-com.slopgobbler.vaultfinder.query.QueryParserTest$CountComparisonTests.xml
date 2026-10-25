@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Count Comparison Tests (&gt;64, &gt;=128, &lt;10)" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T23:08:03.787Z" hostname="DESKTOP-7C7HBBS" time="0.008">
+  <properties/>
+  <testcase name="Strictly greater than comparison (&gt;64)" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$CountComparisonTests" time="0.001"/>
+  <testcase name="Less than or equal comparison (&lt;=16)" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$CountComparisonTests" time="0.001"/>
+  <testcase name="Count comparison with whitespace between operator and value (&gt; 64, &gt;= 128, &lt; 10)" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$CountComparisonTests" time="0.001"/>
+  <testcase name="Exact count match (=64)" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$CountComparisonTests" time="0.0"/>
+  <testcase name="Prefix syntax 'count&gt;=64' and 'c&lt;10'" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$CountComparisonTests" time="0.001"/>
+  <testcase name="Strictly less than comparison (&lt;10)" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$CountComparisonTests" time="0.001"/>
+  <testcase name="Greater than or equal comparison (&gt;=128)" classname="com.slopgobbler.vaultfinder.query.QueryParserTest$CountComparisonTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

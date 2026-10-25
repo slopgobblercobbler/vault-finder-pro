@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Multi-Dimension Separation Tests" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T23:08:03.853Z" hostname="DESKTOP-7C7HBBS" time="0.003">
+  <properties/>
+  <testcase name="Search query with dimension filter isolates dimension results" classname="com.slopgobbler.vaultfinder.tracker.StorageCacheTest$MultiDimensionTests" time="0.001"/>
+  <testcase name="Containers at identical coordinates in different dimensions are separate" classname="com.slopgobbler.vaultfinder.tracker.StorageCacheTest$MultiDimensionTests" time="0.0"/>
+  <testcase name="clearDimension only clears specified dimension" classname="com.slopgobbler.vaultfinder.tracker.StorageCacheTest$MultiDimensionTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
